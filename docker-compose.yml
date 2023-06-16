@@ -1,0 +1,5 @@
+version: '3'
+services:
+  laravel_cypress_test_runner_app:
+    build: .
+    tty: true
