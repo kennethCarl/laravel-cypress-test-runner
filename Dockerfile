@@ -79,3 +79,11 @@ RUN apt-get install -y nodejs
 
 # git
 RUN apt-get install -y git
+
+RUN  echo "short_open_tag = on" >> /etc/php/8.2/apache2/php.ini
+RUN  echo "[opcache]" >> /etc/php/8.2/apache2/php.ini
+RUN  echo "opcache.enable=1" >> /etc/php/8.2/apache2/php.ini
+
+RUN  echo "short_open_tag = on" >> /etc/php/8.2/cli/php.ini
+RUN  echo "[opcache]" >> /etc/php/8.2/cli/php.ini
+RUN  echo "opcache.enable=1" >> /etc/php/8.2/cli/php.ini

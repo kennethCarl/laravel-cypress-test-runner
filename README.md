@@ -1,7 +1,7 @@
 # Laravel Cypress Test Runner
 
 ## Configuration
-- Run `docker composer build --no-cache`
+- Run `docker compose build --no-cache`
 
 ## Publish to docker hub
 - Login to docker hub in docker desktop
