@@ -72,8 +72,8 @@ ENV PATH=./vendor/bin:/composer/vendor/bin:/root/.yarn/bin:/usr/local/sbin:/usr/
 ENV COMPOSER_ALLOW_SUPERUSER=1
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# node18
-RUN curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh && \
+# node20
+RUN curl -sL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh && \
     bash nodesource_setup.sh
 RUN apt-get install -y nodejs
 
